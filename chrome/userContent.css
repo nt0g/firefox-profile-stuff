@@ -1,0 +1,6 @@
+@-moz-document url-prefix("about:");
+@-moz-document url-prefix("chrome://mozapps/content/extensions/aboutaddons.html");
+
+@import url("css/vars.css");
+@import url("css/pip.css");
+@import url("css/scrollbars.css");

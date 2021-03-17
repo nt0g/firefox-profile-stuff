@@ -1,0 +1,25 @@
+.tab-line {
+  -moz-box-ordinal-group: 2 !important;
+  /* margin-left: 10px !important;
+   margin-right: 10px !important;*/
+   height: 1px !important;
+   opacity: 0.5 !important;
+}
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+   border-left: none !important; /* Remove borders from inactive tabs */
+}
+.tabbrowser-tab:not([selected]):not([pinned]) .tab-close-button {
+	display: -moz-box !important;
+	opacity: 0 !important;
+	transition: opacity var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+
+.tabbrowser-tab:not([selected]):not([pinned]):hover .tab-close-button {
+	display: -moz-box !important;
+	opacity: 1 !important;
+	transition: opacity var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+.tabbrowser-tab[pending] {
+  opacity: .5 !important;
+  transition: opacity var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}

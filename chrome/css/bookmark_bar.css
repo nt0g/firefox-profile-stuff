@@ -1,0 +1,40 @@
+#PersonalToolbar {
+	--bar-height: 20px !important;
+	--bar-padding: 4px !important;
+}
+
+:root[uidensity="compact"] #PersonalToolbar {
+	--bar-padding: 1px !important;
+}
+
+:root[uidensity="touch"] #PersonalToolbar {
+	--bar-padding: 7px !important;
+}
+
+#PersonalToolbar:not([customizing]) {
+	position: relative;
+	margin-bottom: calc(0px - var(--bar-height) - 2 * var(--bar-padding)) !important;
+	transform: scaleY(0.0) !important;
+	transform-origin: top !important;
+	transition: transform var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+	z-index: 1 !important;
+}
+
+#PlacesToolbarItems {
+	display: flex !important;
+	justify-content: center !important;
+}
+
+#PlacesToolbarItems > .bookmark-item {
+	padding-block: var(--bar-padding) !important;
+}
+
+#nav-bar:focus-within + #PersonalToolbar {
+  transition-delay: var(--animation-delay-on) !important;
+  transform: scaleY(1.0) !important;
+}
+
+#navigator-toolbox:hover > #PersonalToolbar {
+  transition-delay: var(--animation-delay-on) !important;
+  transform: scaleY(1.0) !important;
+}

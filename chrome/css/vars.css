@@ -1,0 +1,6 @@
+* {
+	--animation-speed: 0.25s;
+	--animation-delay: 1.0s;
+	--animation-delay-on: 0.1s;
+	--animation-interpolator: cubic-bezier(.25,.1,0,1);
+}

@@ -1,0 +1,12 @@
+.pip-wrapper[position="top"] {
+    top: 10px !important;
+    left: 10px !important;
+	opacity: 0.25 !important;
+    transform: scale(0.75) !important;
+    transition: all var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+.pip-wrapper[position="top"]:hover {
+	opacity: 1.0 !important;
+    transform: scale(1.0) !important;
+    transition: all var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
