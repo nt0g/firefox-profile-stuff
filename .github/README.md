@@ -7,7 +7,7 @@
 
 
 ![](https://img.shields.io/badge/Firefox-87+-ff7139?logo=Mozilla%20Firefox&style=flat-square)
-[![](https://img.shields.io/badge/license-MIT-6c5eee?style=flat-square)](./LICENSE)
+[![](https://img.shields.io/badge/license-MIT-6c5eee?style=flat-square)](../LICENSE)
 
 
 <h1> Installation
