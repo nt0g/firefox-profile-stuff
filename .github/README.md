@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/firefox.svg" alt="Firefox Logo" width="120px"/>
+<img src="firefox.svg" alt="Firefox Logo" width="120px"/>
 
 <h1>Firefox Tweaks and Stuff</h1>
 <h3>For version 87+</h3>
