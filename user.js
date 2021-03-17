@@ -1,9 +1,3 @@
-85b5
-
-/*        ТВИКИ ЕБАТЬ        */
-/*  МОЙ ПЕЗДЮК, НЕ ПИЗДИТЬ   */
-
-
 /*          SCROLL 0         */
 user_pref("apz.frame_delay.enabled", false);
 
