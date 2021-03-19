@@ -1,0 +1,34 @@
+/*  Based on https://www.userchrome.org/megabar-styling-firefox-address-bar.html  */
+
+#urlbar[breakout][breakout-extend] {
+	top: 5px !important;
+	left: 0px !important;
+	width: 100% !important;
+	padding: 0px !important;
+}
+
+[uidensity="compact"] #urlbar[breakout][breakout-extend] {
+	top: 3px !important;
+}
+
+[uidensity="touch"] #urlbar[breakout][breakout-extend] {
+	top: 4px !important;
+}
+
+#urlbar-input-container {
+	text-align: center !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+	height: var(--urlbar-height) !important;
+	padding: 0 !important;
+}
+
+#urlbar-results {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+	animation: none !important;
+}
