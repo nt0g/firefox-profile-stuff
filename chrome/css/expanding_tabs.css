@@ -1,0 +1,32 @@
+/*  Based on https://gist.github.com/MisteryMonster/f6b58ea4479c30ee51ba59e01b408601  */
+
+/* Unselected tabs */
+#navigator-toolbox:not(:hover) .tabbrowser-tab:not([pinned]):not([visuallyselected],[multiselected]) {
+	max-width: 30px !important;
+	min-width: 30px !important;
+	overflow: hidden !important;
+    transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+#navigator-toolbox:hover .tabbrowser-tab:not([pinned]):not([visuallyselected],[multiselected]) {
+    transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+
+/* Selected tab */
+#navigator-toolbox:not(:hover) .tabbrowser-tab:not([pinned])[visuallyselected] {
+	max-width: 100vw !important;
+    overflow: hidden !important;
+    transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+#navigator-toolbox:hover .tabbrowser-tab:not([pinned])[visuallyselected] {
+    transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+
+.tabbrowser-tab:not([fadein]) {
+	display: none !important;
+}
+
+.tab-content:not([pinned])::before {
+	display: -moz-box !important;
+	content: "" !important;
+	-moz-box-flex: 1 !important;
+}
