@@ -1,23 +1,5 @@
 /* Comment the following line to disable expanding tabs */
-@import url("expanding_tabs.css");
-
-.tab-line {
-	-moz-box-ordinal-group: 2 !important;
-	/* margin-left: 10px !important;
-	margin-right: 10px !important;*/
-	height: 1px !important;
-	opacity: 0.5 !important;
-	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
-}
-
-#navigator-toolbox:not(:hover) .tab-line {
-	opacity: 0 !important;
-	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
-}
-
-.tabbrowser-tab::after, .tabbrowser-tab::before {
-	border-left: none !important;
-}
+/*@import url("expanding_tabs.css");*/
 
 .tabbrowser-tab:not([selected],[multiselected]):not([pinned]) .tab-close-button,
 .tabbrowser-tab:not([selected],[multiselected]):not([pinned]) .tab-icon-sound {
@@ -43,5 +25,14 @@
 
 .tabbrowser-tab[pending] {
 	opacity: 0.5 !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+
+#navigator-toolbox:not(:hover) #tabbrowser-tabs .tab-background {
+	border-radius: 50px !important;
+	box-shadow: none !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+#navigator-toolbox:hover #tabbrowser-tabs .tab-background {
 	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
 }

@@ -20,11 +20,11 @@
 #navigator-toolbox:hover .tabbrowser-tab:not([pinned])[visuallyselected] {
     transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
 }
-
+/*
 .tabbrowser-tab:not([fadein]) {
 	display: none !important;
 }
-
+*/
 .tab-content:not([pinned])::before {
 	display: -moz-box !important;
 	content: "" !important;

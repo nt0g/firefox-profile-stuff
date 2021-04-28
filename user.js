@@ -23,7 +23,7 @@ user_pref("toolkit.scrollbox.verticalScrollDistance", 5);
 user_pref("alerts.useSystemBackend", true);
 user_pref("media.autoplay.enabled.user-gestures-needed", false);
 user_pref("nglayout.enable_drag_images", false);
-user_pref("browser.uidensity", 1);
+/*user_pref("browser.uidensity", 1);*/
 user_pref("media.videocontrols.picture-in-picture.video-toggle.position", "top");
 
 /*      THEMING SUPPORT      */
