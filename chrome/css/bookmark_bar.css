@@ -13,7 +13,7 @@
 
 #PersonalToolbar:not([customizing]) {
 	position: relative;
-	margin-bottom: calc(0px - var(--bar-height) - 2 * var(--bar-padding)) !important;
+	margin-bottom: calc(0em - var(--bar-height) - 2 * var(--bar-padding)) !important;
 	transform: scaleY(0.0) !important;
 	transform-origin: top !important;
 	transition: transform var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;

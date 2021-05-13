@@ -1,6 +1,6 @@
 .pip-wrapper[position="top"] {
-    top: 10px !important;
-    left: 10px !important;
+    top: 1em !important;
+    left: 1em !important;
 	opacity: 0.25 !important;
     transform: scale(0.75) !important;
     transition: all var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;

@@ -29,10 +29,11 @@
 }
 
 #navigator-toolbox:not(:hover) #tabbrowser-tabs .tab-background {
-	border-radius: 50px !important;
+	border-radius: 10em !important;
 	box-shadow: none !important;
 	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
 }
 #navigator-toolbox:hover #tabbrowser-tabs .tab-background {
+	border-radius: 0em !important;
 	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
 }
