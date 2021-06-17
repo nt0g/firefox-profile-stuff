@@ -32,3 +32,13 @@
 #urlbar[breakout][breakout-extend] > #urlbar-background {
 	animation: none !important;
 }
+
+#navigator-toolbox:not(:hover) #page-action-buttons {
+	opacity: 0;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+
+#navigator-toolbox:hover #page-action-buttons {
+	opacity: 1;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}

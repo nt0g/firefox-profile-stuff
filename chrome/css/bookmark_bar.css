@@ -30,11 +30,11 @@
 }
 
 #nav-bar:focus-within + #PersonalToolbar {
-  transition-delay: var(--animation-delay-on) !important;
-  transform: scaleY(1.0) !important;
+	transition-delay: var(--animation-delay-on) !important;
+	transform: scaleY(1.0) !important;
 }
 
 #navigator-toolbox:hover > #PersonalToolbar {
-  transition-delay: var(--animation-delay-on) !important;
-  transform: scaleY(1.0) !important;
+	transition-delay: var(--animation-delay-on) !important;
+	transform: scaleY(1.0) !important;
 }

@@ -1,5 +1,5 @@
 /* Comment the following line to disable expanding tabs */
-/*@import url("expanding_tabs.css");*/
+@import url("expanding_tabs.css");
 
 .tabbrowser-tab:not([selected],[multiselected]):not([pinned]) .tab-close-button,
 .tabbrowser-tab:not([selected],[multiselected]):not([pinned]) .tab-icon-sound {
@@ -15,12 +15,12 @@
 
 #navigator-toolbox:not(:hover) #tabs-newtab-button {
 	opacity: 0 !important;
-    transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
 }
 
 #navigator-toolbox:hover #tabs-newtab-button {
 	opacity: 1 !important;
-    transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
 }
 
 .tabbrowser-tab[pending] {
@@ -33,7 +33,20 @@
 	box-shadow: none !important;
 	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
 }
+
 #navigator-toolbox:hover #tabbrowser-tabs .tab-background {
-	border-radius: 0em !important;
+	border-radius: 0.25em !important;
 	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+
+#tabbrowser-tabs .tab-context-line {
+	display: none;
+}
+
+#tabbrowser-tabs .tab-background {
+	border-bottom: solid 1px var(--identity-icon-color, rgba(0,0,0,0)) !important;
+}
+
+#tabbrowser-tabs .tab-background[selected="true"] {
+	border-bottom: solid 2px var(--identity-icon-color, rgba(0,0,0,0.05)) !important;
 }
