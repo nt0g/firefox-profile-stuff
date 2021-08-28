@@ -14,7 +14,6 @@
 #PersonalToolbar:not([customizing]) {
 	position: relative;
 	margin-block-end: calc(0em - var(--bar-height) - 2 * var(--bar-padding)) !important;
-	transform: scaleY(0.0) !important;
 	transform-origin: top !important;
 	z-index: 1 !important;
 }

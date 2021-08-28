@@ -4,11 +4,11 @@
 .tab-context-line {
 	display: none;
 }
-.tabbrowser-tab:not([selected],[multiselected]):not([pinned]) .tab-background {
+.tabbrowser-tab:not([selected],[multiselected]) .tab-background {
 	border: 1px solid rgba(255,255,255,0.05) !important;
 	background-color: rgba(0,0,0,0.05) !important;
 }
-.tabbrowser-tab:not([selected],[multiselected]):not([pinned]):hover .tab-background {
+.tabbrowser-tab:not([selected],[multiselected]):hover .tab-background {
 	border: 1px solid var(--identity-icon-color, rgba(255,255,255,0.1)) !important;
 	background-color: rgba(0,0,0,0.1) !important;
 }

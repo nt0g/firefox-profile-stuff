@@ -64,6 +64,7 @@ vbox
 /*  bookmark_bar.css  */
 #PersonalToolbar:not([customizing]) {
 	transition: transform var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+	transform: scaleY(0.0) !important;
 }
 #nav-bar:focus-within + #PersonalToolbar {
 	transition-delay: var(--animation-delay-on) !important;
