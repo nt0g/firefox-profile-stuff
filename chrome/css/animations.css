@@ -1,0 +1,89 @@
+@media (prefers-reduced-motion: no-preference) {
+.tabbrowser-tab:not([selected],[multiselected]):not([pinned]) .tab-close-button,
+.tabbrowser-tab:not([selected],[multiselected]):not([pinned]) .tab-icon-sound {
+	opacity: 0 !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+.tabbrowser-tab:not([selected],[multiselected]):not([pinned]):hover .tab-close-button,
+.tabbrowser-tab:not([selected],[multiselected]):not([pinned]):hover .tab-icon-sound {
+	opacity: 1 !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+#navigator-toolbox:not(:hover) #tabs-newtab-button {
+	opacity: 0 !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+
+#navigator-toolbox:hover #tabs-newtab-button {
+	opacity: 1 !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+.tabbrowser-tab[pending] {
+	opacity: 0.5 !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+/*#navigator-toolbox:not(:hover) #tabbrowser-tabs .tab-background {
+	border-radius: 10em !important;
+	box-shadow: none !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+#navigator-toolbox:hover #tabbrowser-tabs .tab-background {
+	border-radius: 0.25em !important;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}*/
+.tabbrowser-tab:hover .tab-background,
+.tabbrowser-tab:active .tab-background,
+.tabbrowser-tab .tab-background {
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+
+
+/*  experiments.css  */
+toolbarbutton,
+.subviewbutton,
+stack, 
+.toolbarbutton-icon,
+vbox
+{
+    transition: background-color var(--animation-speed) !important;
+}
+
+
+/*  url_bar.css  */
+#navigator-toolbox:not(:hover) #page-action-buttons {
+	opacity: 0;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+
+#navigator-toolbox:hover #page-action-buttons {
+	opacity: 1;
+	transition: var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+
+
+/*  bookmark_bar.css  */
+#PersonalToolbar:not([customizing]) {
+	transition: transform var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+#nav-bar:focus-within + #PersonalToolbar {
+	transition-delay: var(--animation-delay-on) !important;
+	transform: scaleY(1.0) !important;
+}
+#navigator-toolbox:hover > #PersonalToolbar {
+	transition-delay: var(--animation-delay-on) !important;
+	transform: scaleY(1.0) !important;
+}
+
+
+/*  pip.css  */
+.pip-wrapper[position="top"] {
+	opacity: 0.25 !important;
+    transform: scale(0.75) !important;
+    transition: all var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
+}
+.pip-wrapper[position="top"]:hover {
+	opacity: 1.0 !important;
+    transform: scale(1.0) !important;
+    transition: all var(--animation-speed) var(--animation-interpolator) var(--animation-delay-on) !important;
+}
+}

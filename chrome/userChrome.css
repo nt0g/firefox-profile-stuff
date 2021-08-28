@@ -3,5 +3,6 @@
 @import url("css/url_bar.css");
 @import url("css/bookmark_bar.css");
 @import url("css/experiments.css");
+@import url("css/animations.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");

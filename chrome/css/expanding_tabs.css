@@ -1,9 +1,9 @@
 
 .tabbrowser-tab[fadein]:not([selected]):not([pinned]) {  
-	max-width: 10em !important;
-	min-width: 7em !important;
+	max-inline-size: 10em !important;
+	min-inline-size: 5em !important;
 }
 
 .tabbrowser-tab[selected][fadein]:not([pinned]) {
-	min-width: 15em !important;
+	min-inline-size: 15em !important;
 }

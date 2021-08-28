@@ -13,10 +13,9 @@
 
 #PersonalToolbar:not([customizing]) {
 	position: relative;
-	margin-bottom: calc(0em - var(--bar-height) - 2 * var(--bar-padding)) !important;
+	margin-block-end: calc(0em - var(--bar-height) - 2 * var(--bar-padding)) !important;
 	transform: scaleY(0.0) !important;
 	transform-origin: top !important;
-	transition: transform var(--animation-speed) var(--animation-interpolator) var(--animation-delay) !important;
 	z-index: 1 !important;
 }
 
@@ -29,12 +28,3 @@
 	padding-block: var(--bar-padding) !important;
 }
 
-#nav-bar:focus-within + #PersonalToolbar {
-	transition-delay: var(--animation-delay-on) !important;
-	transform: scaleY(1.0) !important;
-}
-
-#navigator-toolbox:hover > #PersonalToolbar {
-	transition-delay: var(--animation-delay-on) !important;
-	transform: scaleY(1.0) !important;
-}
