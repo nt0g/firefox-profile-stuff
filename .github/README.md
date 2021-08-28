@@ -1,18 +1,29 @@
-<div align="center" width="300px">
+<div align="center">
   
 <img src="firefox.svg" alt="Firefox Logo" width="120px"/>
-  
-# Firefox Tweaks and Stuff
-### For version 87+
 
-![](https://img.shields.io/badge/Firefox-87+-ff7139?logo=Mozilla%20Firefox&style=flat-square)
+
+# Firefox Tweaks and Stuff
+### For version 92+
+
+
+[](https://img.shields.io/badge/Firefox-87+-ff7139?logo=Mozilla%20Firefox&style=flat-square)
+
 [![](https://img.shields.io/badge/license-MIT-6c5eee?style=flat-square)](../LICENSE)
+
+
+<video width="720" autoplay loop controls style="box-shadow: 0 5px 20px rgba(0,0,0,0.25)">
+  <source src="preview.webm" type="video/mp4">
+<video>
 
 </div>
 
-*Goes with [nt0g/firefox-overlay-scrollbar](https://github.com/Nt0G/firefox-overlay-scrollbar).*
+*To enable floating scrollbars use userscript loaders, such as [MrOtherGuy/fx-autoconfig](https://github.com/MrOtherGuy/fx-autoconfig).*
 
-
+<div align="center">
 ## Installation
+</div>
 
-[![https://youtu.be/n3lCF9PZmUU](http://img.youtube.com/vi/n3lCF9PZmUU/0.jpg)](https://youtu.be/n3lCF9PZmUU)
+[Video](https://youtu.be/n3lCF9PZmUU)
+
+Copy the contents of the `profile` folder to your Firefox profile folder.
