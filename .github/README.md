@@ -2,27 +2,19 @@
   
 <img src="firefox.svg" alt="Firefox Logo" width="120px"/>
 
-
 # Firefox Tweaks and Stuff
 ### For version 92+
 
 
-[](https://img.shields.io/badge/Firefox-87+-ff7139?logo=Mozilla%20Firefox&style=flat-square)
-
+[](https://img.shields.io/badge/Firefox-92+-ff7139?logo=Mozilla%20Firefox&style=flat-square)
 [![](https://img.shields.io/badge/license-MIT-6c5eee?style=flat-square)](../LICENSE)
 
-
-<video width="720" autoplay loop controls style="box-shadow: 0 5px 20px rgba(0,0,0,0.25)">
-  <source src="preview.webm" type="video/mp4">
-<video>
-
+![](preview.png)
 </div>
 
 *To enable floating scrollbars use userscript loaders, such as [MrOtherGuy/fx-autoconfig](https://github.com/MrOtherGuy/fx-autoconfig).*
 
-<div align="center">
 ## Installation
-</div>
 
 [Video](https://youtu.be/n3lCF9PZmUU)
 
