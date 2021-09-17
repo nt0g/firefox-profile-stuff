@@ -1,5 +1,7 @@
 /*  Based on https://www.userchrome.org/megabar-styling-firefox-address-bar.html  */
-
+#nav-bar {
+	box-shadow: none !important;
+}
 #urlbar[breakout][breakout-extend] {
 	inset-block-start: 5px !important;
 	inset-inline-start: 0px !important;

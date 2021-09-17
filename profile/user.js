@@ -26,6 +26,7 @@ user_pref("nglayout.enable_drag_images", false);
 /*user_pref("browser.uidensity", 1);*/
 user_pref("media.videocontrols.picture-in-picture.video-toggle.position", "top");
 user_pref("browser.compactmode.show", true);
+user_pref("layout.css.color-mix.enabled", true);
 
 /*      THEMING SUPPORT      */
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);

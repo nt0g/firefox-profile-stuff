@@ -1,3 +1,13 @@
 
 /*.tabbrowser-tab:first-child{ counter-reset: nth-tab 0 }
 .tab-text::before{ content: counter(nth-tab) ". "; counter-increment: nth-tab }*/
+
+/* context menu top left button padding */
+menugroup > menuitem:first-child {  
+	padding-left: 4px !important;
+}
+/* context menu top right button padding */
+menugroup > menuitem:last-child {  
+	padding-right: 4px !important;
+}
+

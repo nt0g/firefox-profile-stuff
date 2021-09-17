@@ -1,0 +1,28 @@
+/*  not for the weakest of PCs  */
+
+@media (prefers-reduced-motion: no-preference) {
+
+.tabbrowser-tab:not([selected], [multiselected]) > .tab-stack > .tab-background,
+.toolbar-items .toolbarbutton-1 > .toolbarbutton-icon {
+	backdrop-filter: blur(16px) !important;
+}
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]),
+.toolbar-items .toolbarbutton-1:hover > .toolbarbutton-icon {
+	backdrop-filter: blur(32px) saturate(120%) !important;
+}
+.tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background[selected="true"] {
+	backdrop-filter: blur(32px) saturate(120%) !important;
+}
+.tabbrowser-tab[pending] > .tab-stack > .tab-background {
+	backdrop-filter: blur(16px) saturate(50%) !important;
+}
+.pip-wrapper[position="top"] {
+	backdrop-filter: blur(16px) saturate(180%) !important;
+}
+#PersonalToolbar {
+	backdrop-filter: blur(32px) saturate(120%) !important;
+}
+#urlbar-background {
+	backdrop-filter: blur(32px) saturate(120%) !important;
+}
+}

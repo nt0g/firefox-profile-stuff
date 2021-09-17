@@ -2,20 +2,27 @@
 @import url("expanding_tabs.css");
 
 .tab-context-line {
-	display: none;
+	display: none !important;
 }
-.tabbrowser-tab:not([selected],[multiselected]) .tab-background {
-	border: 1px solid rgba(255,255,255,0.05) !important;
-	background-color: rgba(0,0,0,0.05) !important;
+.tabbrowser-tab:not([selected], [multiselected]) > .tab-stack > .tab-background,
+.toolbar-items .toolbarbutton-1 > .toolbarbutton-icon {
+	border: 1px solid color-mix(in srgb, currentColor 5%, hsla(0,0%,0%,0.05)) !important;
+	background-color: rgba(0,0,0,0.05) !important; 
 }
-.tabbrowser-tab:not([selected],[multiselected]):hover .tab-background {
-	border: 1px solid var(--identity-icon-color, rgba(255,255,255,0.1)) !important;
-	background-color: rgba(0,0,0,0.1) !important;
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected], [multiselected]),
+.toolbar-items .toolbarbutton-1:hover > .toolbarbutton-icon {
+	border: 1px solid var(--identity-icon-color, color-mix(in srgb, currentColor 50%, transparent)) !important;
+	background-color: color-mix(in srgb, var(--identity-icon-color, currentColor) 10%, transparent) !important;
 }
-.tab-background[selected="true"] {
-	box-shadow: 0 2px 0 var(--identity-icon-color, transparent) !important;
+
+.tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background {
+	box-shadow: none !important;
+	background-color: color-mix(in srgb, var(--identity-icon-color, currentColor) 15%, transparent) !important;
+	background-image: none !important;
+	border: 1px solid color-mix(in srgb, var(--identity-icon-color, currentColor) 25%, transparent) !important;
 }
-.titlebar-spacer[type="pre-tabs"] {
+.titlebar-spacer[type="pre-tabs"],
+.titlebar-spacer[type="post-tabs"] {
 	display: none !important;
 }
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
